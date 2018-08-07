@@ -19,7 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Openpay Example App</title>
   </head>
   <body>
     <noscript>
@@ -36,5 +36,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
+    <script>
+      OpenPay.setId('myfi9dfsux3n2fotr9th');
+      OpenPay.setApiKey('pk_74689fb21d5c46ca885debe6d63e3880');
+      OpenPay.setSandboxMode(true);
+    </script>
   </body>
 </html>
